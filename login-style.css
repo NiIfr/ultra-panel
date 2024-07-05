@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'CustomAdminFont';
+    src: url('{$font_url}') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body.login {
+    background-image: url('{$bg_image_url}');
+    background-size: cover;
+    background-position: center;
+        
+}
+
+body.login .language-switcher{
+ background-color: rgb(120 131 111 / 92%);
+border-radius: 12px;
+padding: 10px;
+border: 2px dashed #fff!important;
+}
+
+body.login .language-switcher .button {
+    background-color: #2e3724;
+    color:white;
+border-color: #2e3724;
+}
+    body #login {
+    background-color: rgb(120 131 111 / 92%);
+border-radius: 12px;
+padding: 0 10px;
+}
+.login .message, .login .notice, .login .success {
+border-right:4px solid #68de7c;
+padding: 12px;
+margin-right: 0;
+margin-bottom: 20px;
+border-radius: 12px;
+background-color: #fff;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+word-wrap: break-word;
+}
+.login.login-action-login.wp-core-ui{
+    display: flex;
+justify-content: space-between;
+align-content: space-between;
+align-items: center;
+}
+
+#login #nav a, #login #backtoblog a{
+color:white;
+}
+.login h1 a {
+    
+border: 2px dashed #fff!important;
+border-radius: 12px;
+margin-top:5px;
+    background-image: url('{$logo_url}');
+    background-size: contain;
+    width: 320px;
+    height: 84px;
+}
+.login form#loginform {
+    background: rgb(120 131 111 / 82%);
+padding: 20px;
+border-radius: 10px;
+border: 2px dashed #fff!important;
+color: white;
+font-weight: 700;
+text-shadow: 2px 0px 4px #d4ebb4;
+}
+
+.login form .submit #wp-submit{
+    background-color: #2e3724;
+border-color: #2e3724;
+}
+.login .button-primary {
+    background: #0073aa;
+    border-color: #006799;
+    box-shadow: none;
+    text-shadow: none;
+}
+body.login {
+    font-family: 'CustomAdminFont', sans-serif !important;
+}
+
+
+
+
+body.wp-admin {
+    background-color: var(--admin-bg-color) !important;
+    color: var(--admin-text-color) !important;
+    font-family: 'CustomAdminFont', sans-serif !important;
+}
+
+#wpadminbar, #adminmenu, #adminmenu .wp-submenu, .folded #adminmenu .wp-has-current-submenu .wp-submenu, .folded #adminmenu a.menu-top {
+    background-color: var(--admin-bg-color) !important;
+}
+
+#adminmenu a, #adminmenu div.wp-menu-name {
+    color: var(--admin-text-color) !important;
+}

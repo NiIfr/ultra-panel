@@ -1,0 +1,221 @@
+:root {
+    --ultra-color-main:#000;
+    --admin-bg-color: #ad59ad; /* رنگ پیش‌فرض */
+    --admin-text-color: #611f61; /* رنگ متن پیش‌فرض */
+
+    }
+    @font-face {
+        font-family: "CustomAdminFont";
+        src: url("' . esc_url($font_url) . '") format("woff2");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .dashicons, .dashicons-before:before, #wpadminbar .ab-icon, #wpadminbar .ab-item:before, #wpadminbar>#wp-toolbar>#wp-admin-bar-root-default .ab-icon, .wp-admin-bar-arrow {
+        font-family: dashicons !important;
+    }
+    #adminmenu #menu-posts-elementor_library .wp-menu-image:before, #adminmenu #toplevel_page_elementor div.wp-menu-image:before, .elementor * , .eicon-folder , .eicon-folder::before{
+        font-family: eicons !important;
+    }
+
+    body, .wrap, .widefat, .form-table, .stuffbox, h1, .postbox, .inside, .handlediv, .hndle, .meta-box-sortables, .form-wrap, .add-new-h2,h2,h3,h4,h5,h6,p,a, .add-new-h2 *, .tablenav, ul,li, .subsubsub, .subsubsub *, .tablenav-pages, .tablenav-pages *,.ab-label,span, .view-switch, .view-switch *, .button, .button *, .button-primary, .button-primary *, .button-secondary, .button-secondary * {
+        font-family: "CustomAdminFont", sans-serif !important;
+    }
+
+
+   
+    
+
+    .top-info{
+
+        box-shadow: inset 1px -2px 20px 11px #fff;
+        padding: 20px;
+border-radius: 12px;
+margin: 20px 0 10px 20px;
+text-align: center;
+background-color: #ad59ad;
+color:white;
+font-weight: 700;
+    }
+    .top-info p{
+        font-size: 18px;
+
+    }
+
+    .top-info ul{
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+    .top-info ul li{
+       
+    }
+    .top-info ul li a{
+        text-decoration: none;
+        color: #ad59ad;
+        background-color: #fff;
+        padding: 5px;
+        border-radius: 8px;
+        transition: all 0.3s ease-in-out;
+    }
+    .top-info ul li a:hover{
+        box-shadow: inset 1px -2px 20px 11px #fff;
+        text-decoration: none;
+        color: #ad59ad;
+        background-color: #ad59ad;
+        padding: 5px;
+        border-radius: 8px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #adminmenuwrap {
+     position: relative!important;
+        top: 20px;
+        right:10px;
+    }
+
+    #wpwrap{
+        background-color: white;
+    }
+
+
+    body #wpadminbar {
+        direction: rtl;
+        color: #c3c4c7;
+        font-size: 13px;
+        font-weight: 400;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+        line-height: 2.46153846;
+        height: 32px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        min-width: 600px;
+        z-index: 99999;
+        background: var(--admin-bg-color);
+    }
+
+.ab-icon {
+ font-family: dashicons!important;
+}
+ .ultra-section
+{
+box-shadow: inset 1px -2px 17px 1px #ad59ad;
+padding:20px;
+border-radius: 12px;
+position: relative;
+}
+
+.ultra-section .font-setting {
+    background-color: #f5f5ff;
+    /* filter: blur(0.9px); */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: inset 1px -2px 17px 1px #ad59ad;
+}
+.ultra-section #submit {
+background: #611f61;
+border-color: #611f61;
+   position: absolute;
+   bottom: 20px;
+   right: 20px;
+
+}
+
+.ultra-section #submit:hover {
+background:#ad59ad;
+    border-color: #ad59ad;
+}
+
+#adminmenuback{
+    background-color: var(--admin-bg-color);
+      position: static;
+}
+#adminmenuwrap #adminmenu {
+background-color: var(--admin-bg-color);
+}
+#adminmenuwrap #adminmenu .wp-not-current-submenu:hover{
+    background: var(--admin-text-color);
+    color:white;
+}
+
+#adminmenu .wp-submenu a:focus, #adminmenu .wp-submenu a:hover, #adminmenu a:hover, #adminmenu li.menu-top>a:focus {
+color:#414242 ;
+}
+#adminmenuwrap #adminmenu .wp-submenu {
+    background-color: var(--admin-bg-color);
+    }
+
+#adminmenuwrap #adminmenu .wp-submenu:hover {
+    background-color:var(--admin-bg-color);
+    }
+
+#adminmenuwrap #adminmenu .current{
+    background: var(--admin-bg-color);
+}
+    #adminmenuwrap #adminmenu .current:hover{
+    background: var(--admin-bg-color);
+}
+#adminmenu, #adminmenu , #adminmenuback, #adminmenuwrap {
+    width: 160px;
+    background-color: var(--admin-text-color);
+        border-radius: 12px;
+}
+
+#adminmenu div.wp-menu-image:before {
+    color: var(--admin-text-color);
+}
+
+
+#adminmenu div.wp-menu-image:hover::before {
+    color: var(--admin-text-color);
+}
+    #adminmenu div.wp-menu-image:hover {
+    color: var(--admin-text-color);
+}
+
+
+
+#wpwrap #wpcontent{
+    background-color: white!important;
+}
+
+
+#wpwrap #wpcontent .postbox {
+    position: relative;
+    min-width: 255px;
+    border: 2px dashed var(--admin-bg-color);
+    box-shadow:inset 0px 0px 20px 0px  var(--admin-bg-color);
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+#wpwrap #wpcontent .wp-list-table{
+ 
+    border: 2px dashed var(--admin-bg-color);
+    
+    background: #fff;
+    border-radius: 12px;
+ padding: 10px;
+}
+
+#adminmenu li.current a.menu-top, #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
+    background: #8300ff;
+    color: #fff;
+}
+
+.login form {
+    margin-top: 20px;
+    margin-right: 0;
+    padding: 26px 24px 34px;
+    font-weight: 400;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #0239de!important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .04);
+    border-radius: 12PX;
+}
